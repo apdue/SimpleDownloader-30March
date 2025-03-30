@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "380691994607",
+    "project_id": "downloaderdebug",
+    "storage_bucket": "downloaderdebug.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380691994607:android:318ef4b01692a591b1081a",
+        "android_client_info": {
+          "package_name": "com.apdue.simplenewdownloader_29march"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-hUL0FIiBTvHJXdzy5h_A2k9fAJMPr2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
