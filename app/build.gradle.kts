@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.apdue.simplenewdownloader_29march"
+    namespace = "com.videosimplemaster.hdplaydownload"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.apdue.simplenewdownloader_29march"
+        applicationId = "com.videosimplemaster.hdplaydownload"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

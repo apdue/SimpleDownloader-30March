@@ -3,95 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:fitsSystemWindows="true"
+    android:background="#FFFCFC"
     tools:context=".dummy.ThirdActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/nativeS">
+        android:layout_height="250dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <RelativeLayout
-                android:id="@+id/nativeAd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:minHeight="200dp" />
-
-            <RelativeLayout
-                android:id="@+id/btnNext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@drawable/bg_button">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="15dp"
-                    android:orientation="horizontal"
-                    android:paddingHorizontal="15dp">
-
-                    <TextView
-                        android:id="@+id/t1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/bold"
-                        android:text="Watch &amp; Download"
-                        android:textColor="@color/white"
-                        android:textSize="26sp" />
-
-                    <TextView
-                        android:id="@+id/t2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/t1"
-                        android:fontFamily="@font/regular"
-                        android:text="Watch Trending Reels and Videos"
-                        android:textColor="@color/white"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/t2"
-                        android:layout_marginTop="10dp"
-                        android:background="@drawable/bg_button_white"
-                        android:fontFamily="@font/regular"
-                        android:paddingHorizontal="20dp"
-                        android:paddingVertical="5dp"
-                        android:text="Click Here"
-                        android:textColor="@color/black" />
-
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/ic_play"
-                        android:tint="@color/white" />
-
-
-                </RelativeLayout>
-
-            </RelativeLayout>
-
-
             <TextView
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp"
                 android:fontFamily="@font/bold"
                 android:gravity="center"
-                android:layout_marginHorizontal="20dp"
-                android:text="@string/hThree"
+                android:text="@string/hOne"
                 android:textColor="#1C272B"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -102,46 +35,50 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/regular"
-                android:text="@string/bThree"
+                android:fontFamily="@font/reg"
                 android:gravity="center_horizontal"
+                android:text="@string/bOne"
                 android:textColor="#1C272B"
                 android:textSize="18sp" />
 
-            <androidx.cardview.widget.CardView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="15dp"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="0dp"
-                app:cardBackgroundColor="@color/transparent_background_color">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/image"/>
-
-            </androidx.cardview.widget.CardView>
+            <include layout="@layout/image_layout" />
 
         </LinearLayout>
-
     </ScrollView>
 
     <RelativeLayout
-        android:id="@+id/nativeS"
+        android:id="@+id/nativeAd"
         android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_above="@id/tvNext" />
+
+    <TextView
+        android:id="@+id/tvNext"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="bottom">
+        android:layout_above="@id/nativeAdLayout"
+        android:layout_marginVertical="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="#1C272B"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/nativeAdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
 
         <RelativeLayout
-            android:id="@+id/nativeLayoutSmaller"
+            android:id="@+id/nativeAdTwo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="100dp"
-            android:gravity="center" />
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
+
 
 </RelativeLayout>
