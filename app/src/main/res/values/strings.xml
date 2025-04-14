@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">SimpleNewDownloader-29March</string>
 
+
+    <string name="facebook_app_id">1176315934128572</string>
+    <string name="facebook_client_token">87d083f5a252014941cfd1188fedcb64</string>
+
     <string name="hOne">🔥 Viral Reels of the Week</string>
     <string name="bOne">Stay ahead of the trend with the hottest Reels everyone’s talking about</string>
 
